@@ -1,0 +1,29 @@
+### Get all todos
+
+GET http://localhost:9090/v1/todos
+
+### Get todo
+
+GET http://localhost:9090/v1/todos/625d952b9bb364dd4c04993d
+
+### Create todo
+
+POST http://localhost:9090/v1/todos
+
+{
+	"item": "Nadar",
+	"completed": true
+}
+
+### Update todo
+
+PATCH http://localhost:9090/v1/todos/625db30f877cd4600acd8ef2
+
+{
+	"item": " Nadar mal",
+	"completsed": false
+}
+
+### Delete todo
+
+DELETE http://localhost:9090/v1/todos/625d94ec9bb364dd4c04993c
