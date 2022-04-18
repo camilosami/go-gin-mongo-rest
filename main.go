@@ -27,7 +27,7 @@ var (
 func init() {
 	ctx = context.TODO()
 
-	connection := options.Client().ApplyURI("mongodb://admin:password@localhost:27020")
+	connection := options.Client().ApplyURI("mongodb://admin:pass@localhost:27017")
 	client, err = mongo.Connect(ctx, connection)
 	if err != nil {
 		log.Fatal(err)
